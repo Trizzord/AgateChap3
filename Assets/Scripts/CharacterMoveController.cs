@@ -6,7 +6,6 @@ public class CharacterMoveController : MonoBehaviour
 {
     [Header("Movement")]
     public float moveAccel;
-
     public float maxSpeed;
 
     [Header("Jump")]
@@ -14,26 +13,21 @@ public class CharacterMoveController : MonoBehaviour
 
     [Header("Ground Raycast")]
     public float groundRaycastDistance;
-
     public LayerMask groundLayerMask;
 
     [Header("Scoring")]
     public ScoreController score;
-
     public float scoringRatio;
 
     [Header("GameOver")]
     public GameObject gameOverScreen;
-
     public float fallPositionY;
 
     [Header("Camera")]
     public CameraMoveController gameCamera;
 
     private Rigidbody2D rig;
-
     private Animator anim;
-
     private CharacterSoundController sound;
 
     private bool isJumping;
@@ -68,7 +62,6 @@ public class CharacterMoveController : MonoBehaviour
 
         // calculate score
         int distancePassed = Mathf.FloorToInt(transform.position.x - lastPositionX);
-
         int scoreIncrement = Mathf.FloorToInt(distancePassed / scoringRatio);
 
         if (scoreIncrement > 0)

@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\ScoreData.cs" />
      <Compile Include="Assets\Scripts\TerrainGeneratorController.cs" />
      <Compile Include="Assets\Scripts\TerrainTemplateController.cs" />
+     <Compile Include="Assets\Scripts\UIGameOverController.cs" />
      <Compile Include="Assets\Scripts\UIScoreController.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Library/Creativity/Program/Unity/2D Endless Runner/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
